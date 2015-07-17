@@ -13,6 +13,7 @@ body {
     margin: 0 auto;
     overflow-X: hidden;
     position: relative;
+  
 }
 .left {
   position: absolute;
@@ -29,19 +30,20 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .messages-wrapper{
   background-color: white;  
 }
 
-.bar{
-  background-color: #cff;
+header{
+  border: none;
+  
 }
 
 .left:after {
@@ -129,14 +131,14 @@ header h2 {
 }
 
 .header1 {
-  color: #2095FE;
+  color: black;
   margin-top: 20px;
   text-align: center;
   font-size: 40px;
 }
 
 .header2 {
-  color: #2095FE;
+  color: black;
   text-align: center;
   font-size: 20px;
 }
@@ -178,7 +180,13 @@ header h2 {
   font-size: 18px;
   font-family: "Open Sans";
   background-color: white;
-  color: #2095FE
+  color: #2095FE; 
+ }
+
+.send{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  bottom: 10px;
 }
 
 .result1{
@@ -204,6 +212,10 @@ header h2 {
 }
 
 .rickroll{
+  color: #2095FE;
+  text-decoration: none;
+}
+.royals{
   color: #2095FE;
   text-decoration: none;
 }
