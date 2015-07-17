@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Sass your friends</title>
+  </head>
+  
+  <body>
+    <h1 class="header1">Insert title here.</h1>
+    <h2 class="header2">Sassing your "friends". <br> One message at a time.</h2>
+    
+    <!--   APPLE PHONE BACKGROUND THINGY HERE   -->
+    <form method = "POST" action="/results">
+      
+      <header>
+        <span class="left"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><div class="rickroll">Messages</div></a></span><input type="text" class="numbox" name="number" placeholder="   Recipient's Number" style="width: 160px"><span class="right">Contact</span>
+      </header>`
+      <div class="messages-wrapper">
+        <div class="message to"> <br> </div>
+        <div class="message from"><br><br><br><br><br><br></div>
+        <div class="message from">Is this the message you want to send?</div>
+        <div class="message to">If so, press the "Send" button below.</div>
+        <div class="message to">Don't forget to fill in your name if necessary!</div>
+      </div>
+      
+      
+      <!-- APPLE THINGY ENDS HERE -->
+      <select id="mydropbox" name="select" onchange="copyValue()" class="select_dropdown">
+        <option>Select a message</option>
+        <option>"Why aren't you texting (insert name here) back?</option>
+        <option>Hello! It appears that you've neglected to respond to (insert name here)' s message! You should respond soon!</option>
+        <option>Wow, look at all those unanswered texts in your inbox! Especially that one from (insert name here)!</option>
+        <option>It's cool, (insert name here) will wait.</option>
+        <option>This is an auto-response. If you wish to maintain your positive relationship with (insert name here), please respond to their attempts to contact you. Thank you for your time.</option>
+        <option>Guess you have better things to do than answer (insert name here)'s text...</option>
+        <option>There was once a boy who didn't answer his phone. He died.</option>
+        <option>Oh, so you fainted from the excitement of getting a text from (insert name here)? Totally understandable. Text them when you wake up!</option>
+        <option>I saw you open (insert name here)'s Snapchat story, maybe you should answer their text too!</option>
+        <option>I saw you post on Instagram, maybe you should answer (insert name here)'s text too!</option>
+        <option>I saw you post on Twitter, maybe you should answer (insert name here)'s text too!</option>
+        <option>I saw you were on Facebook, maybe you should answer (insert name here)'s text too!</option>
+        <option>Is it normal for you to tell people to be in touch then to ignore their texts? I'm starting to wonder if you even care about (insert name here).</option>
+        <option>Is it seriously taking you this long to respond to (insert name here)?"</option>
+        <option>Sorry (insert name here) annoyed you with their friendship...</option>
+        <option>I'm touched that you're so in awe that you can't even pull it together to text (insert name here) back.</option>
+        <option>Apologies, I forgot that people in your contacts don't exist until you need them.</option>
+        <option>Oh, I thought your thumbs had fallen off and you could no longer text anyone back...</option>
+        <option>You should check your messages, it looks like there's one you didn't respond to!</option>
+        <option>I hope you're writing (insert name here) a fucking essay.</option>
+        <option>If you don't respond to your text messages, I will skin you and hang you on a tree. Like you will literally be flapping in the wind.</option>
+        <option>As Abraham Lincoln once said, 'Answer your fucking phone.'</option>
+        <option>If you don't answer your text messages, I will rip off your arm and slap you with 
+        <option>Custom option - write your own message in the box below!</option>
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
+      <textarea type="textbox" id="mytextbox" name="message" class="message_box"></textarea>
+      
+      <script>
+        function copyValue(){
+          var dropboxvalue = document.getElementById('mydropbox').value;
+          document.getElementById('mytextbox').value = dropboxvalue;
+        }
+      </script>
+      
+      <input type="submit" value=" Send " class="send_button">
+    
+    </form>
+  </body>
+
+</html>
